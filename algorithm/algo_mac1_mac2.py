@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import time
 
-g_map = {"000422": "湖北宜化"}
+from common.config import g_map
 
 
 class AlgoMac1Mac2:

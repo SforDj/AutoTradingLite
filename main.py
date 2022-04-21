@@ -10,7 +10,8 @@ from common.config import jq_userid, jq_passwd
 
 import jqdatasdk as jq
 
-g_securities = ["000422"]
+from common.config import g_map
+g_securities = g_map.keys()
 
 
 # init mysql & jq etc.

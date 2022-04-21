@@ -62,8 +62,8 @@ def fetch_past_data_to_mysql(handler: DatasetMysql):
             sp = security_price.make_from_data_frame(code, price_data.iloc[i])
             sql_txt = sp.gen_insert_sql()
             if not handler.execute_if_exist(sp.code_, sp.time_, sql_txt):
-                print("fetch_past_data_to_mysql failed. met error in execute sql")
-                return False
+                print("it has exist. no need to insert to dataset")
+                # return False
     print("fetch_past_data_to_mysql success.")
     return True
 

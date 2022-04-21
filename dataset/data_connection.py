@@ -35,7 +35,7 @@ class DatasetMysql:
             self.execute(sql_txt)
             return True
         else:
-            print("it has existed! met error")
+            # print("it has existed!")
             return False
 
     def if_exist(self, code, time):
